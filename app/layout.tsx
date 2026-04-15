@@ -9,6 +9,11 @@ const _geistMono = Geist_Mono({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: 'EasySplit - Split the bill, keep the chill',
   description: 'Eliminate the friction and social awkwardness of group finances. Track expenses, sync balances in real-time, and settle up fairly without the math.',
+  icons: {
+    icon: '/easysplit-logo.svg',
+    shortcut: '/easysplit-logo.svg',
+    apple: '/easysplit-logo.svg',
+  },
 }
 
 export default function RootLayout({

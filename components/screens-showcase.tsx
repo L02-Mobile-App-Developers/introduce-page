@@ -41,12 +41,12 @@ export function ScreensShowcase() {
           </p>
         </ScrollReveal>
 
-        <div className="grid gap-6 lg:grid-cols-12">
+        <div className="grid gap-6 lg:grid-cols-4 lg:items-start">
           {screens.map((screen, index) => (
             <ScrollReveal
               key={screen.title}
               delay={120 * index}
-              className={index === 0 ? "lg:col-span-4" : index === 1 ? "lg:col-span-4 lg:mt-10" : index === 2 ? "lg:col-span-4" : "lg:col-span-6 lg:mx-auto"}
+              className="h-full"
             >
               <div className="group overflow-hidden rounded-[1.75rem] border border-slate-200/80 bg-white p-3 shadow-[0_18px_50px_rgba(15,23,42,0.07)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_28px_70px_rgba(15,23,42,0.11)]">
                 <div className="rounded-[1.45rem] border border-slate-200 bg-[linear-gradient(180deg,rgba(255,255,255,0.98),rgba(240,248,249,0.96))] p-4">
@@ -88,7 +88,7 @@ export function ScreensShowcase() {
 
                 <div className="px-3 pb-4 pt-5 text-center">
                   <h3 className="text-lg font-semibold text-slate-950">{screen.title}</h3>
-                  <p className="mt-1 text-sm leading-6 text-slate-600">{screen.description}</p>
+                  <p className="mt-1 h-12 overflow-hidden text-sm leading-6 text-slate-600">{screen.description}</p>
                 </div>
               </div>
             </ScrollReveal>

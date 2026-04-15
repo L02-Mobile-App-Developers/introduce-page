@@ -17,7 +17,6 @@ export function HeroSection() {
 
       <div className="mx-auto grid max-w-7xl items-center gap-14 lg:grid-cols-[1.02fr_0.98fr] lg:gap-10">
         <div className="max-w-2xl">
-
           <ScrollReveal delay={80}>
             <h1 className="text-5xl font-semibold tracking-tight text-slate-950 sm:text-6xl lg:text-7xl">
               EasySplit
